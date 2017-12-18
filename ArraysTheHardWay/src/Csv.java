@@ -23,8 +23,7 @@ public class Csv {
 		List<Book> books = new ArrayList<>();
 		Path pathToFile = Paths.get(fileName);
 		
-		try(BufferedReader br = Files.newBufferedReader(pathToFile, 
-				StandardCharsets.US_ASCII))
+		try(BufferedReader br = Files.newBufferedReader(pathToFile, StandardCharsets.US_ASCII))
 		{
 			String line = br.readLine();
 			while(line!= null)
